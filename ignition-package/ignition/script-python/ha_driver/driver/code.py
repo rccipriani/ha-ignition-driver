@@ -1,14 +1,14 @@
-from ha_bridge import protocol
-from ha_bridge.registry import EntityRegistry
-from ha_bridge.subscriptions import SubscriptionManager
-from ha_bridge.tags import TagManager
-from ha_bridge.transport import HomeAssistantTransport
+from ha_driver import protocol
+from ha_driver.registry import EntityRegistry
+from ha_driver.subscriptions import SubscriptionManager
+from ha_driver.tags import TagManager
+from ha_driver.transport import HomeAssistantTransport
 
 
 class HomeAssistantDriver(object):
     def __init__(self, config):
         self.config = config
-        self.logger = system.util.getLogger("ha_bridge.driver")
+        self.logger = system.util.getLogger("ha_driver.driver")
         self.tags = TagManager(config["tag_root"])
         self.registry = EntityRegistry(
             config["tag_root"],

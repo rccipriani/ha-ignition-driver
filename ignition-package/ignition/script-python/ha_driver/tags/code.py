@@ -29,7 +29,7 @@ def typed_value(entity_state):
 class TagManager(object):
     def __init__(self, tag_root):
         self.tag_root = tag_root.rstrip("/")
-        self.logger = system.util.getLogger("ha_bridge.tags")
+        self.logger = system.util.getLogger("ha_driver.tags")
 
     def ensure_driver_tags(self):
         provider_root, relative_root = self._split_provider(self.tag_root)

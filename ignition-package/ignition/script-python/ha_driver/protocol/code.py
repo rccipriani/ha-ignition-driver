@@ -36,7 +36,7 @@ def ping():
 
 
 def parse_entity_state(raw_state):
-    from ha_bridge.models import EntityState
+    from ha_driver.models import EntityState
 
     if not raw_state:
         return None

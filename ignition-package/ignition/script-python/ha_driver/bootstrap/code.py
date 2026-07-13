@@ -1,9 +1,9 @@
 def start():
-    from ha_bridge import config
-    from ha_bridge import runtime
+    from ha_driver import config
+    from ha_driver import runtime
 
     settings = config.load()
-    logger = system.util.getLogger("ha_bridge.bootstrap")
+    logger = system.util.getLogger("ha_driver.bootstrap")
 
     if not settings.get("enabled"):
         logger.info("Home Assistant driver is disabled")
@@ -17,8 +17,8 @@ def start():
 
 
 def stop():
-    from ha_bridge import runtime
-    system.util.getLogger("ha_bridge.bootstrap").info(
+    from ha_driver import runtime
+    system.util.getLogger("ha_driver.bootstrap").info(
         "Stopping Home Assistant WebSocket driver"
     )
     runtime.stop()

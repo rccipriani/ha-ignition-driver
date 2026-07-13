@@ -6,7 +6,7 @@ _LOCK = ReentrantLock()
 
 def start(config):
     global _DRIVER
-    from ha_bridge.driver import HomeAssistantDriver
+    from ha_driver.driver import HomeAssistantDriver
 
     _LOCK.lock()
     try:

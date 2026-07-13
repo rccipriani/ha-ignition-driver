@@ -1,6 +1,6 @@
 import uuid
 
-from ha_bridge import protocol
+from ha_driver import protocol
 
 
 _driver_getter = None
@@ -13,7 +13,7 @@ def configure_driver_getter(getter):
 
 def _driver():
     if _driver_getter is None:
-        from ha_bridge import runtime
+        from ha_driver import runtime
         return runtime.get_driver()
     return _driver_getter()
 

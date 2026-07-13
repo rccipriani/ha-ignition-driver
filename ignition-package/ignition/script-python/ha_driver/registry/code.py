@@ -1,4 +1,4 @@
-from ha_bridge.models import EntityMapping
+from ha_driver.models import EntityMapping
 
 
 def split_entity_id(entity_id):
