@@ -1,4 +1,4 @@
-CONFIG_TAG_ROOT = "[default]HomeAssistant/Configuration"
+CONFIG_TAG_ROOT = "[default]HomeAssistantV2/Configuration"
 DEFAULT_TAG_ROOT = "[default]HomeAssistantV2"
 DEFAULT_WS_URL = "ws://192.168.1.91:8123/api/websocket"
 
