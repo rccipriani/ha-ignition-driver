@@ -19,11 +19,12 @@ This repository is a functional starter implementation. The transport, protocol,
 ## Repository layout
 
 ```text
-ignition/project_library/ha_bridge/  Ignition project-library scripts
-ignition/gateway_events/             Gateway startup/shutdown examples
-docs/                                Architecture and installation notes
-examples/                            Example command usage
-Tests/                               CPython-compatible unit tests for pure logic
+gateway_events/
+ignition-package/
+    project.json
+    ignition/
+        script-python/
+            ha_driver/
 ```
 
 ## Quick start
